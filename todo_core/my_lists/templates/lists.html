@@ -1,0 +1,7 @@
+{% extends 'base.html' %} {% block content %}
+<ul class="list-group">
+    {% for list in lists %}
+    <li class="list-group-item"><a href="{{list.pk}}">{{list.title}}</a></li>
+    {% endfor %}
+  </ul>
+{% endblock %}
